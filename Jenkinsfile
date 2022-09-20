@@ -8,7 +8,7 @@ pipeline{
 		stages {
 			stage ('build project'){
 				steps {
-				sh "rm -rf /root/.m2"
+				/*sh "rm -rf /root/.m2"*/
 				sleep 5
 				sh "mvn clean install"
 				
