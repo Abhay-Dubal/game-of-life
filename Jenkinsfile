@@ -33,7 +33,7 @@ pipeline{
 			stage ('create container') {
 				steps {
 					
-					sh "docker run --name mytomcat -itpd 8888:8080 tomcat:09"
+					sh "docker run --name my-container -itpd 8080:8080 mytomcat"
 					
 					}
 				}	
